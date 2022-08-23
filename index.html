@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/logo.png">
+    <title>Cumlaude Gak Ya?</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Cumlaude Gak Ya?</h1>
+        <p>Dengan memasukkan IP sementara, kita bisa mengetahui berapa IP yang dibutuhkan agar kita bisa Cumlaude</p>
+        <div class="line"></div>
+    </div>
+    <form class="form">
+        <div class="input">
+            <label for="ips">IP Sementara</label>
+            <input type="number" step="any" required  id="ips" placeholder="0"/>  
+        </div>
+        <div class="input">
+            <label for="sks1">SKS Yang Sudah Didapat</label>
+            <input  type="number" step="any"  required id="sks1" placeholder="0"/>  
+        </div>
+        <div class="input">
+            <label for="sks2">SKS Untuk Lolos</label>
+            <input  type="number" step="any" required id="sks2" placeholder="0"/>  
+        </div>
+        <div class="input">
+            <label for="ipc">Syarat IP Untuk Cumlaude</label>
+            <input  type="number" step="any" required id="ipc" placeholder="0"/>  
+        </div>
+    </form>
+    <div class="sumbit">
+        <button id="submit">Submit</button>
+    </div>
+
+    <div class="notif none" id="notif">
+        <p>Minimal nilai yang dibutuhkan untuk bisa cumlaude adalah</p>
+        <p class="ipr" id="ipr"></p>
+        <p>Semangatttt bestieee</p>
+    </div>
+
+
+    <div class="alert" id="alert">
+        <ion-icon name="warning-outline"></ion-icon>
+        <p>Itu belum keiisi semua bestie!!!!</p>
+    </div>
+</body>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</html>
