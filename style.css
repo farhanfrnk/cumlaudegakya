@@ -92,15 +92,20 @@ body{
     background-color: var(--btnColor);
     border: none;
     color: white;
-    height: 2vw;
+    height: 3vw;
+    width: 5vw;
     border-radius: 7px;
+    box-shadow:  2px 2px 2px #007fd1,
+                -2px -2px 2px #00abff;
     font-family: 'DynaPuff', cursive;
-    
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 
-.submit button:hover{
-    box-shadow:  20px 20px 60px #007fd1,
-                -20px -20px 60px #00abff;
+.sumbit button:hover{
+    box-shadow:  10px 10px 30px #007fd1,
+                -10px -10px 30px #00abff;
+    
 }
 
 .notif{
@@ -161,29 +166,35 @@ body{
 
 
 .alert{
-    width: 60%;
+    width: 100%;
     height: 5%;
     color: white;
     display: none;
-    justify-content: center;
     align-items: center;
     gap: 10px;
+    margin: 20px 0;
 
-    background-color: red;
-    border-radius: 2px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    animation: alertAnim 0.5s;
+    border: 2px solid var(--btnColor);
+    background-color: rgba(0, 149, 246, 0.5);
+    border-radius: 5px;
+    box-shadow:
+          0 0 5px rgba(0, 149, 246, .5),
+          0 0 5px rgba(0, 149, 246, .5),
+          0 0 5px rgba(0, 149, 246, .5);
+    position: relative;
+
+    animation: alertAnim 1s;
+}
+
+.alert .icon{
+    padding-left: 20px;
 }
 
 @keyframes alertAnim {
 
     0%{
         opacity: 0;
-        top: -30px;
+        transform: scale(0.5);
     }
 
     100%{
